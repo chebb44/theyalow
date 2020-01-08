@@ -592,6 +592,10 @@ input[type=range]::-webkit-slider-runnable-track {
   top: -2px;
 }
 
+.section-mobile-wrap {
+  display: none;
+}
+
 @font-face {
   font-family: Lucida Sans;
   src: url("fonts/Lucida Sans.ttf");
@@ -615,5 +619,14 @@ input[type=range]::-webkit-slider-runnable-track {
 @font-face {
   font-family: Open Sans;
   src: url("fonts/opensans.ttf");
+}
+
+@media (max-width: 640px) {
+  .site-wrap {
+    width: 650px;
+  }
+  .header {
+    width: 640px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
