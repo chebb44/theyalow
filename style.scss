@@ -1,0 +1,502 @@
+@mixin border{
+  border: 2px red solid;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  position: relative;
+  width: 1300px;
+}
+.top-wrap{
+  height: 565px;
+  background: url(image/header-background.svg);
+}
+
+.header{
+   width: 1020px;
+  margin: 0 auto;
+  //@include border;
+  height: 164px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .header-logo{
+      margin-right: auto;
+      position: relative;
+      width: 320px;
+      height: 94px;
+      h1 {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 41px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Lucida Sans";
+        font-style: italic;
+      }
+      .logo-one{
+        position: relative;
+        left: -1px;
+        top: -3px;
+        }
+      .logo-two{
+        position: absolute;
+        left: -4px;
+        top: -5px;
+        }
+    }
+    .header-navi{
+      box-shadow: -6px -6px 0px 0px rgba(245,197,6,0.2);
+      display: flex;
+      justify-content: flex-end;
+      height: 40px;
+      width: 455px;
+      margin-top: 20px;
+      .link-wrap{
+        display: flex;
+        border-left: 2px #dcb105 solid;
+        &:first-of-type{
+          flex-grow: 0;
+          width: 172px;
+          border: none;
+        }
+        &:nth-of-type(2){
+          flex-grow: 0;
+          width: 130px;
+        }
+        &:nth-of-type(3){
+          flex-grow: 0;
+          width: 147px;
+        }
+      }
+      a{
+        text-decoration: none;
+        display: flex;
+        flex-grow: 1;
+        font-size: 17px;
+        letter-spacing: 0px;
+        color: #9b7d08;
+        font-family: "Segoe WP";
+        background-color: #f5c506;
+        p{
+          
+          position: relative;
+          margin: auto;
+        }
+      }
+      
+      .nav-about{
+        padding-left: 50px;
+        &::before{
+          content: '';
+          position: absolute;
+          left:18px;
+          top: -3px;
+          background: url(image/icon-about-us.svg);
+          width:23px;
+          height: 23px;
+          background-size: cover;
+        }
+      }
+      .nav-services{
+        padding-left: 20px;
+        &::before{
+          content: '';
+          position: absolute;
+          left:-5px;
+          top: -3px;
+          background: url(image/icon-service.svg);
+          width:20px;
+          height: 20px;
+          background-size: cover;
+        }
+      }
+      .nav-contact{
+        padding-left: 25px;
+        &::before{
+          content: '';
+          position: absolute;
+          left:-8px;
+          top: -2px;
+          background: url(image/icon-contacts.svg);
+          width:25px;
+          height: 20px;
+          background-size: cover;
+        }
+      }
+    }
+  
+}
+
+.video-sec{
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Asap";
+  color: white;
+    .video-discr{
+      padding-bottom: 21px;
+      line-height: 77px;
+      margin-left: -80px;
+      text-align: center;
+      font-size: 63px;
+      letter-spacing: 1px;
+      
+      font-weight: 400;
+      text-transform: uppercase;
+      span{
+        color: #f5c506;
+      }
+    }
+    .arrow-wrap{
+      display: flex;
+      align-items: center;
+      width: 33px;
+      height: 55px;
+      background-color: #c2a009;
+      img{
+        margin: auto;
+      }  
+    }
+  }
+
+
+
+.icon-area-wrap {
+  height: 213px;
+  background: url(image/icon-area-background.svg);
+}
+.icon-area{
+  width: 1020px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  
+  .column{
+    width: 33.333%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:nth-of-type(2n+1){
+      border-left: 2px #d1d1d1 solid;
+      border-right: 2px #d1d1d1 solid;
+    }
+    &:nth-of-type(2)>img{
+      margin-top: -20px;
+      
+    }
+    .text-wrap{
+      margin-top: 15px;
+      font-size: 27px;
+      letter-spacing: 0px;
+      color: #000000;
+      font-family: "Segoe UI";
+      font-weight: 300;
+    }
+  }
+}
+
+.section-one-wrap {
+  height: 510px;
+  background: url(image/sec-one-background.png);
+  .section-one{
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 35px;
+    .container{
+      height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+
+      .column{
+        flex-basis: 33.333%;
+        &:nth-of-type(2n+1){
+          background-color: #ec9e03;
+        }
+        &:nth-of-type(2n+1){
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+      
+    }
+  }
+}
+.lorem{
+  font-family: PT Sans;
+  font-size: 37px;
+  color: rgba(255, 255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.lorem-full{
+  font-family: Segoe WP;
+  font-weight: 200;
+  font-size: 29px;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  padding-top: 13px;
+  padding-left: 30px;
+  line-height: 38px;
+  //padding-top: 25px;
+}
+.plus{
+  display: block;
+  float: right;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 255);
+  font-size: 30px;
+  font-weight: 900;
+  align-self: flex-end;
+}
+.column>.text{
+  font-family: Segoe WP;
+  font-weight: 200;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 255);
+  align-self: flex-end;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+.section-one .date{
+  width: 113px;
+  height: 86px;
+  text-align: center;
+  background-color: #ddb101;
+  display: block;
+  float: left;
+  font-family: Segoe UI;
+  font-weight: 200;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 255);
+}
+.part-one{
+  margin-top: 5px;
+  font-size: 51px;
+}
+.part-two{
+  margin-top: 5px;
+  color: rgba(178, 101, 41, 255);
+}
+body > div.site-wrap > div.section-one-wrap > div > div.container > div:nth-child(3) > div.plus{
+  margin-top: -20px;
+}
+
+#range1{
+  display: block;
+  width: 896px;
+  margin: 43px auto 0px auto;
+}
+  input[type=range] {
+    height: 21px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: #FAE180;
+    opacity: 1;
+    border-radius: 55px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 197px;
+    border-radius: 6px;
+    background: #EC9E03;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 0px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FAE180;
+    border-radius: 14px;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: #FAE180;
+    border-radius: 14px;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 50px;
+    border-radius: 6px;
+    background: #EC9E03;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #FAE180;
+    border-radius: 28px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #FAE180;
+    border-radius: 28px;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    height: 15px;
+    width: 50px;
+    border-radius: 6px;
+    background: #EC9E03;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #FAE180;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #FAE180;
+  }
+
+
+.section-two-wrap {
+  height: 495px;
+  background: url(image/sec-two-background.svg);
+
+}
+.section-two{
+  width: 1020px;
+  height: 100%;
+  margin: 0 auto;
+
+  .text-block{
+  font-family: PT Sans;
+  font-size: 43px;
+  color: rgba(245, 197, 6, 255);
+  text-transform: uppercase;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 57px;
+  }
+  .pictures-conatainer{
+    position: relative;
+    float: left;
+    img{
+      margin-right: 15px;
+      &:nth-of-type(3){
+        vertical-align: bottom;
+        padding-bottom: 40px;
+      }
+      &:nth-of-type(1){
+        padding-left: 20px;
+      }
+      &:nth-of-type(4){
+        position: absolute;
+        top: -50px;
+        left: -5px;
+      }
+    }
+  }
+  .list-container{
+    float: right;
+    width: 345px;
+    .list-one{
+      padding-top: 43px;
+    }
+    .list-one li{
+      position: relative;
+      line-height: 23px;
+      font-family: Open Sans;
+      font-size: 22px;
+      color: rgba(169, 169, 167, 255);
+      padding-bottom: 25px;
+      &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: -40px;
+        top: 2px;
+        background-image: url(image/Ellipse-small.svg);
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+
+.footer-wrap {
+  height: 65px;
+  background-color: #4c4c4c;
+  box-shadow: 0px -6px 7px -4px rgba(0,0,0,0.75);
+  .footer-logo{
+  margin-right: auto;
+  position: relative;
+  left: 145px;
+  top: 10px;
+  width: 250px;
+  height: 50px;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+  }
+  .logo-one{
+    width: 51px;
+    height: 51px;
+    position: relative;
+    left: -2px;
+    top: -2px;
+    }
+  .logo-two{
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    }
+  } 
+}
+
+@font-face {
+	font-family: Lucida Sans;
+	src: url('fonts/Lucida Sans.ttf');
+}
+@font-face {
+	font-family: Segoe WP;
+	src: url('fonts/SegoeWP.ttf');
+}
+
+@font-face {
+	font-family: Asap;
+	src: url('fonts/Asap-Regular.ttf');
+}
+@font-face {
+	font-family: Segoe UI;
+	src: url('fonts/SegoeUI.ttf');
+}
+@font-face {
+	font-family: Open Sans;
+	src: url('fonts/opensans.ttf');
+}
