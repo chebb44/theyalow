@@ -195,12 +195,16 @@
             background: url(image/mes-cloud.png);
             background-size: cover;
             z-index: -1;
-            
-            
-            .message-text{
-            }
-           
+           }
+          .message-text, .message-author{
+            font-family: Arial;
+            font-size: 13px;
+            color: rgba(143, 142, 142, 255);
+            padding-top: 3px;
+            padding-left: 10px;
           }
+           
+          
         }
         .text-input{
           border: 2px #d0a806 solid;

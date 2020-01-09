@@ -211,6 +211,13 @@
     background-size: cover;
     z-index: -1;
   }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message .message-text, .section-mobile-wrap .section-mobile .section-mobile-column .message .message-author {
+    font-family: Arial;
+    font-size: 13px;
+    color: #8f8e8e;
+    padding-top: 3px;
+    padding-left: 10px;
+  }
   .section-mobile-wrap .section-mobile .section-mobile-column .text-input {
     border: 2px #d0a806 solid;
     border-radius: 10px;
