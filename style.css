@@ -17,7 +17,7 @@ html {
 
 .top-wrap {
   height: 565px;
-  background: url(image/header-background.svg);
+  background: url(assets/image/header-background.svg);
 }
 
 .header {
@@ -145,7 +145,7 @@ html {
   position: absolute;
   left: 18px;
   top: -3px;
-  background: url(image/icon-about-us.svg);
+  background: url(assets/image/icon-about-us.svg);
   width: 23px;
   height: 23px;
   background-size: cover;
@@ -160,7 +160,7 @@ html {
   position: absolute;
   left: -5px;
   top: -3px;
-  background: url(image/icon-service.svg);
+  background: url(assets/image/icon-service.svg);
   width: 20px;
   height: 20px;
   background-size: cover;
@@ -175,7 +175,7 @@ html {
   position: absolute;
   left: -8px;
   top: -2px;
-  background: url(image/icon-contacts.svg);
+  background: url(assets/image/icon-contacts.svg);
   width: 25px;
   height: 20px;
   background-size: cover;
@@ -237,7 +237,7 @@ html {
 
 .icon-area-wrap {
   height: 213px;
-  background: url(image/icon-area-background.svg);
+  background: url(assets/image/icon-area-background.svg);
 }
 
 .icon-area {
@@ -287,7 +287,7 @@ html {
 
 .section-one-wrap {
   height: 510px;
-  background: url(image/sec-one-background.png);
+  background: url(assets/image/sec-one-background.png);
 }
 
 .section-one-wrap .section-one {
@@ -477,7 +477,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .section-two-wrap {
   height: 495px;
-  background: url(image/sec-two-background.svg);
+  background: url(assets/image/sec-two-background.svg);
 }
 
 .section-two {
@@ -544,7 +544,7 @@ input[type=range]::-webkit-slider-runnable-track {
   position: absolute;
   left: -40px;
   top: 2px;
-  background-image: url(image/Ellipse-small.svg);
+  background-image: url(assets/image/Ellipse-small.svg);
   background-size: cover;
   width: 15px;
   height: 15px;
@@ -598,27 +598,27 @@ input[type=range]::-webkit-slider-runnable-track {
 
 @font-face {
   font-family: Lucida Sans;
-  src: url("fonts/Lucida Sans.ttf");
+  src: url("assets/fonts/Lucida Sans.ttf");
 }
 
 @font-face {
   font-family: Segoe WP;
-  src: url("fonts/SegoeWP.ttf");
+  src: url("assets/fonts/SegoeWP.ttf");
 }
 
 @font-face {
   font-family: Asap;
-  src: url("fonts/Asap-Regular.ttf");
+  src: url("assets/fonts/Asap-Regular.ttf");
 }
 
 @font-face {
   font-family: Segoe UI;
-  src: url("fonts/SegoeUI.ttf");
+  src: url("assets/fonts/SegoeUI.ttf");
 }
 
 @font-face {
   font-family: Open Sans;
-  src: url("fonts/opensans.ttf");
+  src: url("assets/fonts/opensans.ttf");
 }
 
 @media (max-width: 640px) {
