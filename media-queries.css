@@ -174,5 +174,60 @@
   .section-mobile-wrap .section-mobile .section-mobile-column:nth-of-type(1) img {
     padding-top: 35px;
   }
+  .section-mobile-wrap .section-mobile .section-mobile-column:nth-of-type(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    z-index: 1;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message {
+    position: relative;
+    width: 284px;
+    height: 42px;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message:nth-of-type(1)::after {
+    opacity: 1;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message:nth-of-type(2)::after {
+    opacity: 0.75;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message:nth-of-type(3)::after {
+    opacity: 0.5;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .message::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    width: 100%;
+    height: 100%;
+    background: url(image/mes-cloud.png);
+    background-size: cover;
+    z-index: -1;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .text-input {
+    border: 2px #d0a806 solid;
+    border-radius: 10px;
+    height: 29px;
+    width: 270px;
+    margin-right: -69px;
+  }
+  .section-mobile-wrap .section-mobile .section-mobile-column .submit-btn {
+    width: 69px;
+    height: 29px;
+    border: 2px #d0a806 solid;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial;
+    background-color: #dc9b19;
+    margin-right: 35px;
+  }
 }
 /*# sourceMappingURL=media-queries.css.map */
